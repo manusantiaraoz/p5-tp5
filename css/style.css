@@ -1,0 +1,17 @@
+/* dejar el main mas grande */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+/* aqui termina */
+
+h2{
+    font-family: 'Bungee Outline', sans-serif;
+color: #fdcae1;
+
+}
