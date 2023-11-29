@@ -23,7 +23,7 @@
   function reset() {
     clearInterval(timer);
     running = false; //vuelve running a false
-    mostrar.innerText = "00:00:000"; //setea h2
+    mostrar.innerText = "00  :  00  :  000"; //setea h2
     btnSartStop.innerText = "Iniciar";//setea el boton a iniciar
   }
 
@@ -41,7 +41,7 @@
     const minutes = Math.floor(ms / (60 * 1000));
     const seconds = Math.floor((ms % (60 * 1000)) / 1000);
     const milliseconds = ms % 1000;
-    return pad(minutes) + " : " + pad(seconds) + " : " + pad(milliseconds, 3);
+    return pad(minutes) + "  :  " + pad(seconds) + "  :  " + pad(milliseconds, 3)+"   ";
   }
 
   function pad(num, length = 2) {//agrega el 0 de ser necesario
